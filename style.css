@@ -1,0 +1,115 @@
+.button-white {
+    background-color: white;
+    color: gray;
+    border: none;
+}
+.button-white:hover{
+    text-decoration: none;
+    background-color: white;
+    color: gray;
+    border: none;
+}
+.button-white:focus{
+    text-decoration: none;
+    background-color: white;
+    color: gray;
+    border: none;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .head {
+        justify-content: center;
+    }
+    .nav-bar > div{
+        margin: 0 auto;
+    }
+
+    .margin-rightd > div{
+        padding-top: 20px;
+    }
+}
+.margin-rightd > div{
+    padding-top: 10px;
+}
+.margin-rightd {
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.head *{
+    margin-right: 20px;
+}
+body a{
+    text-decoration: none;
+    color: gray;
+}
+body a:hover{
+    color: black;
+}
+.head-border {
+    border-bottom: lightgray solid 1px;
+    box-shadow: lightgray;
+    font-size: 12px;
+}
+.head-link > div {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+nav {
+  width: 320px;
+}
+.nav-bar {
+    flex-wrap: wrap;
+}
+
+.margin-rightd {
+    margin-left: 20px;
+}
+.kroshkiDiv {
+    padding: 5px;
+    border-radius: 5px;
+    border: lightgray solid 1px;
+}.kroshkiDiv a{
+    color: royalblue;
+}
+.id {
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+.id a{
+    color: royalblue;
+}
+.dsdsd {
+    text-align: center;
+}
+.w100 {
+    width: 100%;
+}
+.tab-content {
+    border: lightgray solid 1px;
+    border-radius: 2px;
+}
+.center {
+    text-align: center;
+}
+.card {
+    max-width: 230px;
+    text-align: center;
+}
+.cardss > div {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.footer {
+    background-color: #000;
+    color: lightgray;
+}
+.footer a:hover{
+    color: lightgray;
+}
