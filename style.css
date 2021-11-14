@@ -21,18 +21,6 @@
     flex-wrap: wrap;
     align-items: center;
 }
-@media (max-width: 767px) {
-    .head {
-        justify-content: center;
-    }
-    .nav-bar > div{
-        margin: 0 auto;
-    }
-
-    .margin-rightd > div{
-        padding-top: 20px;
-    }
-}
 .margin-rightd > div{
     padding-top: 10px;
 }
@@ -98,13 +86,16 @@ nav {
 .center {
     text-align: center;
 }
-.card {
-    max-width: 230px;
+.cards {
     text-align: center;
 }
+.cardss {
+    margin: 10px -20px;
+    justify-content: center;
+}
 .cardss > div {
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin: 0 20px 20px 20px;
+    max-width: 220px;
 }
 .footer {
     background-color: #000;
@@ -112,4 +103,91 @@ nav {
 }
 .footer a:hover{
     color: lightgray;
+}
+.form-select {
+    width: 70px;
+}
+@media (max-width: 1000px) {
+    .head-link {
+        position: relative;
+    }
+    .head-link div:nth-child(3) {
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+        .head-link div:nth-child(1) {
+        margin-bottom: 80px;
+    }
+    .head-link div:nth-child(4) {
+        height: 38px;
+    }
+    .nav-bar {
+        width: 100%;
+    }
+    .nav-bar .collll {
+        width: 100%;
+    }
+    .nav-bar .navbar {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .head {
+        justify-content: center;
+    }
+    .nav-bar > div{
+        margin: 0 auto;
+    }
+
+    .margin-rightd > div{
+        padding-top: 20px;
+    }
+    .nav-bar .margin-rightd{
+        display: none !important;
+    }
+    .head-link div:nth-child(3) {
+        position: static;
+    }
+        .head-link div:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    .head-link div:nth-child(4) {
+        height: 60px;
+    }
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 50px;
+    left: 0;
+}
+.head-link div:nth-child(2) {
+    height: 50px;
+}
+.head-link div:nth-child(2) button{
+    height: 50px;
+}
+.head-link div:nth-child(4) {
+    height: 50px;
+}
+.head-link div:nth-child(4) button{
+    padding: 2px;
+}
+.head-link div:nth-child(3) {
+    font-size: 25px;
+    color: dimgrey;
+}
+.head-link div:nth-child(3) a{
+    color: dimgrey;
+}
+.head-border {
+    box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+    background-color: #f5f5f5;
+}
+.head-border button{
+    background-color: #f5f5f5;
 }
