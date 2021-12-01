@@ -3,14 +3,9 @@
 <html lang="en">
   <head>
 	<?
-		if (isset($_GET["iv_color"]))
-		print_r($_GET["iv_color"]);
-	?>
-	
-	<?
 	$bg_color = "#ffffff";
-	if (isset($_POST["iv_color"])) {
-		$bg_color = $_POST["iv_color"];
+	if (isset($_GET["iv_color"])) {
+		$bg_color = $_GET["iv_color"];
 	}
 	?>
 	
