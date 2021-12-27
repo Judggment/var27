@@ -1,6 +1,6 @@
 <?
 session_start();
-unset($_POST['error']);
+unset($_GET['error']);
 if(isset($_SESSION["email"])){
   header("Location:/session/auth.php");
 }elseif(isset($_POST["email"]) && isset($_POST["pass"]) && $_POST["pass"]!="" && $_POST["pass"]=="1"){
@@ -23,11 +23,11 @@ if(isset($_SESSION["email"])){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<form action="/cookie/index.php" method="POST">
   <div class="form-group">
-    <label for="email" name="email" required><b>Электронная почта</b></label>
+    <label for="email" name="email" required>Электронная почта</label>
     <input type="text" placeholder="email" name="email" class="form-control" width>
   </div>
   <div class="form-group">
-    <label for="pass" required><b>Пароль</b></label>
+    <label for="pass" required>Пароль</label>
     <input type="password" class="form-control" class="form-control" name="pass" placeholder="Password">
 	<?
             echo($errorText);
