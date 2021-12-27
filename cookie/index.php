@@ -1,5 +1,5 @@
 <?
-unset($_GET['error']);
+unset($_POST['error']);
 if(isset($_COOKIE["email"])&&isset($_COOKIE["pass"])){
   header("Location:/cookie/auth.php");
 }elseif(isset($_POST["email"]) && isset($_POST["pass"]) && $_POST["pass"]!="" && $_POST["pass"]=="1"){
