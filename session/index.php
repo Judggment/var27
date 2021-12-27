@@ -1,6 +1,6 @@
 <?
 session_start();
-unset($_GET['error']);
+unset($_POST['error']);
 if(isset($_SESSION["email"])){
   header("Location:/session/auth.php");
 }elseif(isset($_POST["email"]) && isset($_POST["pass"]) && $_POST["pass"]!="" && $_POST["pass"]=="1"){
